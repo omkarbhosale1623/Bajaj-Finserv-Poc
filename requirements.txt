@@ -16,4 +16,5 @@ pandas
 numpy 
 scikit-learn 
 matplotlib
+PyPDF2
 python-dotenv
