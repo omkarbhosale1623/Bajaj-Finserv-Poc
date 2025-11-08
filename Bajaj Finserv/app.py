@@ -49,7 +49,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", None)  # set if using EURI proxy
 FAISS_INDEX_DIR = os.getenv("FAISS_INDEX_DIR", "faiss_index_bajaj")
 EMBEDDING_MODEL_NAME = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
-LLM_MODEL_NAME = os.getenv("OPENAI_LLM_MODEL", "gpt-4o-mini")
+LLM_MODEL_NAME = os.getenv("OPENAI_LLM_MODEL", "gpt-oss-20b:free")
 
 if not OPENAI_API_KEY:
     st.error("Missing OPENAI_API_KEY in environment. Add it to .env and restart.")
@@ -446,3 +446,4 @@ st.markdown(
     "<div style='text-align:center; color:grey;'>🚀 PoC by Omkar Bhosale — Answers come only from uploaded factsheets.</div>",
     unsafe_allow_html=True
 )
+
